@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="row">
+        <div class="card col-md-4 mt-2 ">
+            <form #userForm="ngForm" (ngSubmit)="InsertRecord(userForm.value)">
+                <div class="form-group mt-2">
+                    <input type="text" ngModel name="name" class="form-control" placeholder="Name" [value]="searchValue">
+                     
+                </div>
+
+                <div class="form-group mt-2">
+                    <input type="text" ngModel name="Mobile" class="form-control" placeholder="Mobile">                     
+                </div>
+
+                <div class="form-group">
+
+                    <input type="text" ngModel name="email" class="form-control" placeholder="Email">
+                </div>
+
+                <button type="submit" class="btn btn-danger mb-2" (click)="clearSearch()" >Insert</button>
+                 
+            </form>
+        </div>
+    </div>
+       
+    
+</div>
